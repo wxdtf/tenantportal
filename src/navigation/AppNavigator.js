@@ -22,24 +22,8 @@ const Tab = createBottomTabNavigator();
 function MainTabs() {
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused, color, size }) => {
-          let iconName;
-
-          if (route.name === 'Home') {
-            iconName = focused ? 'home' : 'home-outline';
-          } else if (route.name === 'Maintenance') {
-            iconName = focused ? 'construct' : 'construct-outline';
-          } else if (route.name === 'Bills') {
-            iconName = focused ? 'card' : 'card-outline';
-          } else if (route.name === 'Events') {
-            iconName = focused ? 'calendar' : 'calendar-outline';
-          } else if (route.name === 'Profile') {
-            iconName = focused ? 'person' : 'person-outline';
-          }
-
-          return <Ionicons name={iconName} size={size} color={color} />;
-        },
+      screenOptions={{
+        headerShown: true,
         tabBarActiveTintColor: Colors.primary,
         tabBarInactiveTintColor: Colors.textSecondary,
         headerStyle: {
@@ -49,28 +33,53 @@ function MainTabs() {
         headerTitleStyle: {
           fontWeight: '700',
         },
-      })}
+      }}
     >
       <Tab.Screen
         name="Home"
         component={HomeScreen}
-        options={{ title: 'Dashboard' }}
+        options={{
+          title: 'Dashboard',
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? 'home' : 'home-outline'} size={size} color={color} />
+          ),
+        }}
       />
       <Tab.Screen
         name="Maintenance"
         component={MaintenanceScreen}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? 'construct' : 'construct-outline'} size={size} color={color} />
+          ),
+        }}
       />
       <Tab.Screen
         name="Bills"
         component={BillsScreen}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? 'card' : 'card-outline'} size={size} color={color} />
+          ),
+        }}
       />
       <Tab.Screen
         name="Events"
         component={EventsScreen}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? 'calendar' : 'calendar-outline'} size={size} color={color} />
+          ),
+        }}
       />
       <Tab.Screen
         name="Profile"
         component={ProfileScreen}
+        options={{
+          tabBarIcon: ({ focused, color, size }) => (
+            <Ionicons name={focused ? 'person' : 'person-outline'} size={size} color={color} />
+          ),
+        }}
       />
     </Tab.Navigator>
   );
