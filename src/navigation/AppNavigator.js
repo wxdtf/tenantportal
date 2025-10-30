@@ -32,6 +32,7 @@ function MainTabs() {
         headerTintColor: Colors.white,
         headerTitleStyle: {
           fontWeight: '700',
+          fontSize: 18,
         },
       }}
     >
@@ -106,6 +107,7 @@ export default function AppNavigator() {
                 headerShown: true,
                 headerStyle: { backgroundColor: Colors.primary },
                 headerTintColor: Colors.white,
+                headerTitleStyle: { fontSize: 18 },
                 title: 'Marketplace'
               }}
             />
@@ -116,6 +118,7 @@ export default function AppNavigator() {
                 headerShown: true,
                 headerStyle: { backgroundColor: Colors.primary },
                 headerTintColor: Colors.white,
+                headerTitleStyle: { fontSize: 18 },
                 title: 'Messages'
               }}
             />
