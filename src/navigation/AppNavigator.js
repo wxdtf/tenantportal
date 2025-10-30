@@ -47,21 +47,37 @@ function MainTabs() {
         },
         headerTintColor: Colors.white,
         headerTitleStyle: {
-          fontWeight: 'bold',
+          fontWeight: '700',
         },
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} options={{ title: 'Dashboard' }} />
-      <Tab.Screen name="Maintenance" component={MaintenanceScreen} />
-      <Tab.Screen name="Bills" component={BillsScreen} />
-      <Tab.Screen name="Events" component={EventsScreen} />
-      <Tab.Screen name="Profile" component={ProfileScreen} />
+      <Tab.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ title: 'Dashboard' }}
+      />
+      <Tab.Screen
+        name="Maintenance"
+        component={MaintenanceScreen}
+      />
+      <Tab.Screen
+        name="Bills"
+        component={BillsScreen}
+      />
+      <Tab.Screen
+        name="Events"
+        component={EventsScreen}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={ProfileScreen}
+      />
     </Tab.Navigator>
   );
 }
 
 export default function AppNavigator() {
-  const isAuthenticated = false; // This will be managed by auth context later
+  const isAuthenticated = true; // This will be managed by auth context later
 
   return (
     <NavigationContainer>
