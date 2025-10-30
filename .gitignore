@@ -1,91 +1,41 @@
-# Dependencies
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
 node_modules/
-.pnp
-.pnp.js
 
-# Testing
-coverage/
-*.lcov
-.nyc_output
-
-# Production
-build/
+# Expo
+.expo/
 dist/
-*.app
-*.apk
-*.ipa
+web-build/
+expo-env.d.ts
 
-# Environment variables
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Mobile specific
-# React Native
+# Native
+.kotlin/
+*.orig.*
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-*.orig.*
-web-build/
 
-# Android
-*.iml
-.gradle
-local.properties
-.idea/
-*.hprof
+# Metro
+.metro-health-check*
 
-# iOS
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata/
-*.xccheckout
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-ios/Pods/
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
-# Expo
-.expo/
-.expo-shared/
+# macOS
+.DS_Store
+*.pem
 
-# Temporary files
-tmp/
-temp/
-*.tmp
+# local env files
+.env*.local
 
-# Package manager
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android

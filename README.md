@@ -83,11 +83,79 @@ TenantPortal enhances accessibility, efficiency, and community engagement within
 
 ## Technology Stack
 
-*To be determined based on development approach (native vs. hybrid)*
+### Mobile Framework
+- **React Native** with **Expo** - Cross-platform development
+- **React Navigation** - Navigation and routing
+- **Expo Vector Icons** - Icon library
+
+### Development Tools
+- **Node.js** - JavaScript runtime
+- **npm** - Package manager
+- **Git** - Version control
+
+## Screenshots
+
+*Coming soon - App screenshots will be added after initial testing*
 
 ## Getting Started
 
-*Documentation in progress*
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/wxdtf/tenantportal.git
+   cd tenantportal
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+4. **Run on your device**
+   - Install Expo Go on your mobile device
+   - Scan the QR code displayed in your terminal
+   - Or press `i` for iOS simulator, `a` for Android emulator, or `w` for web
+
+### Detailed Setup
+
+For detailed development setup instructions, including platform-specific requirements and troubleshooting, see [DEVELOPMENT.md](docs/DEVELOPMENT.md).
+
+## Project Status
+
+🚧 **In Development** - Initial app structure and screens implemented
+
+### Completed
+- ✅ Project setup and configuration
+- ✅ Navigation structure (tab and stack navigation)
+- ✅ Authentication screens (Login/Register)
+- ✅ Dashboard/Home screen
+- ✅ Maintenance request management screen
+- ✅ Bills and payments screen
+- ✅ Events and amenities screen
+- ✅ Community marketplace screen
+- ✅ Messaging/chat screen
+- ✅ Profile and settings screen
+- ✅ Theme and styling system
+
+### In Progress
+- 🔄 Backend API integration
+- 🔄 State management implementation
+- 🔄 Authentication flow
+- 🔄 Push notifications setup
+
+### Upcoming
+- ⏳ Unit and integration tests
+- ⏳ Real-time chat functionality
+- ⏳ Image upload and compression
+- ⏳ Offline support
+- ⏳ Payment gateway integration
+- ⏳ Analytics integration
 
 ## Contributing
 
