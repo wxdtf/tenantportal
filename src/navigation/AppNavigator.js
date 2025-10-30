@@ -23,17 +23,9 @@ function MainTabs() {
   return (
     <Tab.Navigator
       screenOptions={{
-        headerShown: true,
+        headerShown: false,
         tabBarActiveTintColor: Colors.primary,
         tabBarInactiveTintColor: Colors.textSecondary,
-        headerStyle: {
-          backgroundColor: Colors.primary,
-        },
-        headerTintColor: Colors.white,
-        headerTitleStyle: {
-          fontWeight: '700',
-          fontSize: 18,
-        },
       }}
     >
       <Tab.Screen
@@ -103,24 +95,10 @@ export default function AppNavigator() {
             <Stack.Screen
               name="Marketplace"
               component={MarketplaceScreen}
-              options={{
-                headerShown: true,
-                headerStyle: { backgroundColor: Colors.primary },
-                headerTintColor: Colors.white,
-                headerTitleStyle: { fontSize: 18 },
-                title: 'Marketplace'
-              }}
             />
             <Stack.Screen
               name="Messages"
               component={MessagesScreen}
-              options={{
-                headerShown: true,
-                headerStyle: { backgroundColor: Colors.primary },
-                headerTintColor: Colors.white,
-                headerTitleStyle: { fontSize: 18 },
-                title: 'Messages'
-              }}
             />
           </>
         )}
