@@ -12,7 +12,7 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.tenantportal.app"
     },
     "android": {
       "adaptiveIcon": {
