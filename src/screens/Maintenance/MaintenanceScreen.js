@@ -127,7 +127,7 @@ export default function MaintenanceScreen() {
               <TextInput
                 style={[styles.input, styles.textArea]}
                 placeholder="Description"
-                multiline
+                multiline={true}
                 numberOfLines={4}
                 placeholderTextColor={Colors.textSecondary}
               />

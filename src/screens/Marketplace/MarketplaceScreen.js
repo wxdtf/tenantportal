@@ -22,7 +22,7 @@ export default function MarketplaceScreen() {
           </TouchableOpacity>
         </View>
 
-        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.categories}>
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} style={styles.categories}>
           {['All', 'Furniture', 'Electronics', 'Appliances', 'Services'].map((cat) => (
             <TouchableOpacity key={cat} style={styles.categoryChip}>
               <Text style={styles.categoryText}>{cat}</Text>
